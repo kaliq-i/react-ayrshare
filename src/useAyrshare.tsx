@@ -29,6 +29,7 @@ export function useAyrshare({
           setHasUserClickedDone(true);
           onSuccess && onSuccess();
           popupRef.current && popupRef.current.close();
+          setHasUserClickedDone(false);
         }
       }
     },
@@ -74,16 +75,16 @@ export function useAyrshare({
       window.clearInterval(popUpIntervalRef.current);
       popUpIntervalRef.current = null;
     }
+
     popUpIntervalRef.current = window.setInterval(() => {
       try {
         if (popupRef.current && popupRef.current.closed) {
+          if (!hasUserClickedDone && onError) {
+            onError();
+          }
           if (popUpIntervalRef.current !== null) {
             window.clearInterval(popUpIntervalRef.current);
             popUpIntervalRef.current = null;
-            setHasUserClickedDone(false);
-          }
-          if (!hasUserClickedDone && onError) {
-            onError();
           }
         }
       } catch (error) {
@@ -91,7 +92,6 @@ export function useAyrshare({
         if (popUpIntervalRef.current !== null) {
           window.clearInterval(popUpIntervalRef.current);
           popUpIntervalRef.current = null;
-          setHasUserClickedDone(false);
         }
       }
     }, 1000);

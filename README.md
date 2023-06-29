@@ -183,23 +183,19 @@ export default function LinkedInPage() {
 
 - Source code: https://github.com/kaliq-i/react-ayrshare/blob/master/src/App.js
 
-- Video
+- Video: <iframe src="https://player.vimeo.com/video/840825457" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
 ## Props
 
 - `Ayrshare` component:
 
-| Parameter | value | is required | default |
-
-| ----------- | -------- | :---------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-
-| redirectUri | string | yes | |
-
-| onSuccess | function | yes | |
-
-| onError | function | no | |
-
-| children | function | no | Require if using `Ayrshare` component (render props) |
+| Parameter   | Type     | Required | Default                                              |
+| ----------- | -------- | -------- | ---------------------------------------------------- |
+| redirectUri | string   | yes      |                                                      |
+| authUrl     | string   | yes      |                                                      |
+| onSuccess   | function | yes      |                                                      |
+| onError     | function | no       |                                                      |
+| children    | function | no       | Require if using `Ayrshare` component (render props) |
 
 - `AyrshareCallback` component:
 
