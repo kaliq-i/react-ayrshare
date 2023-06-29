@@ -1,6 +1,6 @@
 {
   "name": "react-ayrshare",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component for Ayrshare - Log In feature using OAuth without redirect",
   "main": "build/index.js",
   "module": "build/index.esm.js",
