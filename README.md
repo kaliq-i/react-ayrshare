@@ -43,7 +43,7 @@ call the `useAyrshare` Hook (recommended) or `Ayrshare` (render props technique)
 
 React Hooks Implementation
 
-```ts
+```tsx
 import React from 'react';
 
 import { useAyrshare } from '../src/useAyrshare';
@@ -93,7 +93,7 @@ export default AyrsharePage;
 
 If you don't want to use hooks. This library offer render props implementation:
 
-```ts
+```tsx
 import React, { useState, useEffect } from 'react';
 
 import { Ayrshare } from '../src/Ayrshare';
@@ -151,7 +151,7 @@ Then we point `redirectUri` to `AyrshareCallback`. You can use [react-router-dom
 
 - `react-router-dom`:
 
-```ts
+```tsx
 import React from 'react';
 
 import { AyrshareCallback } from 'react-ayrshare';
@@ -169,7 +169,7 @@ function Demo() {
 
 - Next.js's file system routing:
 
-```ts
+```tsx
 // pages/ayrshare.js
 
 import { AyrshareCallback } from 'react-ayrshare';
@@ -182,7 +182,6 @@ export default function LinkedInPage() {
 ## Demo
 
 https://github.com/kaliq-i/react-ayrshare/assets/41687116/a6d16264-8dfa-4d4a-b03b-8503447c56aa
-
 
 ## Props
 
