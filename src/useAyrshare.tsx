@@ -80,6 +80,7 @@ export function useAyrshare({
           if (popUpIntervalRef.current !== null) {
             window.clearInterval(popUpIntervalRef.current);
             popUpIntervalRef.current = null;
+            setHasUserClickedDone(false);
           }
           if (!hasUserClickedDone && onError) {
             onError();
@@ -90,6 +91,7 @@ export function useAyrshare({
         if (popUpIntervalRef.current !== null) {
           window.clearInterval(popUpIntervalRef.current);
           popUpIntervalRef.current = null;
+          setHasUserClickedDone(false);
         }
       }
     }, 1000);
