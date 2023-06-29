@@ -183,7 +183,7 @@ export default function LinkedInPage() {
 
 - Source code: https://github.com/kaliq-i/react-ayrshare/blob/master/src/App.js
 
-- Video: <iframe src="https://player.vimeo.com/video/840825457" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/840825457" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
 ## Props
 
