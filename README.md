@@ -46,7 +46,7 @@ React Hooks Implementation
 ```tsx
 import React from 'react';
 
-import { useAyrshare } from '../src/useAyrshare';
+import { useAyrshare } from 'react-ayrshare';
 
 function AyrsharePage() {
   const { ayrshareLogin } = useAyrshare({
@@ -96,7 +96,7 @@ If you don't want to use hooks. This library offer render props implementation:
 ```tsx
 import React, { useState, useEffect } from 'react';
 
-import { Ayrshare } from '../src/Ayrshare';
+import { Ayrshare } from 'react-ayrshare';
 
 function AyrsharePage() {
   const [authUrl, setAuthUrl] = useState('');
@@ -174,7 +174,7 @@ function Demo() {
 
 import { AyrshareCallback } from 'react-ayrshare';
 
-export default function LinkedInPage() {
+export default function Demo() {
   return <AyrshareCallback />;
 }
 ```
